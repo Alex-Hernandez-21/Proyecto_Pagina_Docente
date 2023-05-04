@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(243, 246, 247);
+}
+div{
+    background-color: rgb(128, 119, 119);
+    padding: 30px;
+}
+
+.boton{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(206, 93, 93);
+    padding: 8px;
+    border-radius: 10px;
+    margin: 5px;
+}
