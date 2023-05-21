@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');  /*letra para titulos*/
+/*font-family: 'Playfair Display', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@1,300&display=swap');/*letra para parrafo*/
+/*font-family: 'Roboto', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
