@@ -6,4 +6,84 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+}
+
+/* .header-container{
+    background-image: linear-gradient(120deg, rgba(213, 252, 121, 0.696) 0%, rgba(150, 230, 161, 0.69) 100%), url(imag/img-header3.jpg);
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+} */
+
+.nav-bar{
+    background-image: linear-gradient(120deg, rgba(84, 95, 58, 0.696) 0%, rgba(19, 141, 36, 0.69) 100%);
+    height: 60px;
+}
+.nav-link{
+    display: flex;
+    display: inline-block;
+    justify-content: flex-end;
+}
+
+.header-container{
+    background-image: linear-gradient(to top, rgba(161, 58, 132, 0.703) 0%, rgba(54, 92, 159, 0.709) 100%), url(imag/img-header3.jpg);
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;          /*no repite la imag*/
+    background-position: center;
+    background-size: cover;                /*tamaño de fondo y se mantiene fijo*/
+    background-attachment: fixed;          /*realiza scroll y la imagen se mantiene*/
+    position: relative;
+    overflow: hidden;                      /*no se salgan elementos del header*/
+
+}
+
+.text-header{
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;             /*organiza elemento en columna*/
+    justify-content: center;           /*me centra los elementos horiz*/
+    align-items: center;               /*me centra los elementos  vert*/
+}
+
+.text-header h1{
+    font-size: 75px;
+}
+.text-header p{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.text-header a{
+    font-size: 20px;
+    margin-bottom: 20px;                     /*diseño del boton y enlace*/
+    text-decoration: none;
+    display: inline-block;
+    padding: 11px 15px;
+    border-radius: 20px;
+    background-color: rgb(69, 27, 27);
+    color: white;
+}
+.text-header a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+html{
+    scroll-behavior: smooth;
 }
