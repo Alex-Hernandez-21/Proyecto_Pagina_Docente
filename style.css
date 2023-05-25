@@ -54,7 +54,6 @@ body{
     color: rgb(0, 0, 0);
     font-size: 24px;
     font-weight: bolder;
-    font-family: 'Noto Serif', serif;  
     font-weight: 400; 
     padding-right: 25px;     
 }
@@ -71,13 +70,6 @@ body{
 }
 
 /* --------- style header ---------- */
-
-/* .header-container{
-    background-image: linear-gradient(120deg, rgba(213, 252, 121, 0.696) 0%, rgba(150, 230, 161, 0.69) 100%), url(imag/img-header3.jpg);
-    width: 100%;
-    height: 650px;
-    background-repeat: no-repeat;
-} */
 
 .header-container{
     background-image: linear-gradient(to top, rgba(161, 58, 132, 0.703) 0%, rgba(54, 92, 159, 0.709) 100%), url(imag/img-header3.jpg);
@@ -150,7 +142,78 @@ html{
     margin-bottom: 30px;
 }
 
-/* -------- style first section -------*/
+/* -------- style slide-------*/
+
+.slide-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+.img-sli{
+    width: 100%;
+    
+}
+
+.slide{
+   display: flex;
+   transform: translate3d(0,0,0);
+   transition: all 600ms;
+   animation-name: autoplay;
+   animation-duration: 6.5s;
+   animation-direction: alternate;
+   animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+}
+
+.item-slider{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.pagination-r{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    width: 25px;
+    height: 25px;
+    border-radius: 5%;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.596);
+    margin: 0 12px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.pagination:hover{
+    transform: scale(2.5);
+}
+
+
+
+
+/* -------style first section */
 
 .img-section-one{
     width: 60%;
@@ -191,7 +254,7 @@ html{
     margin-bottom: 20px;                     /*diseño del boton y enlace*/
     text-decoration: none;
     display: inline-block;    
-    padding: 10px 15px;
+    padding: 8px 15px;
     border-radius: 20px;
     background-color: rgba(69, 27, 27, 0.75);
     color: white;
@@ -232,8 +295,15 @@ html{
 .parrafo-cr{
     text-align: justify;
     font-size: 1rem;
-    margin-bottom: 4rem;
+    margin:20px 0 20px 0;
     padding: 0 10px;    
+}
+
+.cards i{
+    font-size: 200%;
+    color:brown;
+    margin: 30px 0 20px 0;
+    
 }
 .cards:hover{
     transform: scale(1.1);
@@ -241,12 +311,9 @@ html{
     box-shadow: 0 7px 7px 0 rgb(79, 74, 74); 
 }
 
-.cards i{
-    font-size: 200%;
-    color:brown;
-    
+.cards h3{
+    margin: 10px 0 10px 0; 
 }
-
 
 .img-galery{
     width: 20%;
